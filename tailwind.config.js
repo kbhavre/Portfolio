@@ -8,6 +8,7 @@ export default {
     extend: {
       fontFamily: {
         kyiv: ['KyivTypeSans'], // Add KyivType Sans
+        raleway: ['Raleway']
       },
       colors: {
         primary: "#F4F2ED",
