@@ -37,4 +37,9 @@ body{
     font-style: normal;
 }
 
-
+@layer components{
+    .formText{
+        @apply text-primary text-sm font-raleway uppercase font-medium tracking-wide
+    }
+        
+}
