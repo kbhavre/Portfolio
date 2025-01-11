@@ -40,7 +40,7 @@ const MenuBar = () => {
       {/* Menu Button */}
       <div className="lg:hidden flex items-center justify-end p-4">
         <button
-          className="z-10 text-2xl font-raleway font-medium text-myBlack underline"
+          className="z-50 text-2xl font-raleway font-medium text-myBlack underline"
           onClick={() => setIsMenuOpen(!isMenuOpen)}
         >
           Menu
@@ -73,7 +73,7 @@ const MenuBar = () => {
       <AnimatePresence>
         {isMenuOpen && (
           <motion.div
-            className="lg:hidden fixed top-0 left-0 w-full h-screen bg-secondary flex flex-col items-end justify-end gap-36 p-4"
+            className="z-40 lg:hidden fixed top-0 left-0 w-full h-screen bg-secondary flex flex-col items-end justify-end gap-36 p-4"
             initial={{ x: "-100%" }}
             animate={{ x: 0 }}
             exit={{ x: "-100%" }}
