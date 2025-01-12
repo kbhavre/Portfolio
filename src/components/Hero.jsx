@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { DrawCircle } from "./DrawCircle";
 
 import { IoArrowForwardCircleOutline } from "react-icons/io5";
-import tempWide from '../assets/tempWide.png'
+import HeroImage from '../assets/heroImage.jpg'
 
 const Hero = () => {
   return (
@@ -67,8 +67,9 @@ const Hero = () => {
       {/* Right Part (Image) */}
       <img
   className="w-[90%] -my-20 sm:my-0 sm:w-[350px] lg:w-[540px]  lg:h-[100%] mx-auto lg:mx-0 order-first lg:order-last object-cover object-center"
-  src={tempWide}
+  src={HeroImage}
   alt="HeroImage"
+  loading="lazy"
 />
 
       
