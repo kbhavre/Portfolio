@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
 import { DrawCircle } from "./DrawCircle";
-import { motion } from "framer-motion";
 
 import { IoArrowForwardCircleOutline } from "react-icons/io5";
 import tempWide from '../assets/tempWide.png'
@@ -30,7 +29,8 @@ const Hero = () => {
         <div className="flex justify-start gap-24 ">
           <div className="flex flex-col items-center gap-4">
             <h6 className="formText leading-none text-myGrey">Featured Works</h6>
-            <motion.div
+
+            {/* <motion.div
               animate={{ rotate: [-360, 360] }}
               transition={{
                 duration: 8,
@@ -40,7 +40,12 @@ const Hero = () => {
               }}
             >
               <IoArrowForwardCircleOutline className="h-10 w-10 text-myBlack" />
-            </motion.div>
+            </motion.div> */}
+
+            
+            <IoArrowForwardCircleOutline
+      className="h-12 w-12 mt-1 text-myBlack transition-transform duration-300 ease-in-out transform hover:rotate-45 z-[1000]"
+    />
           </div>
 
           <h6 className="formText text-myGrey font-sans font-normal tracking-tight hidden lg:block">
