@@ -18,7 +18,7 @@ const App = () => {
           duration: 40,
           ease: "linear",
         }}
-        className="absolute left-[-250px] top-[200px]  lg:left-[-250px] lg:bottom-[-250px] w-[600px] opacity-10 z-[1000]"
+        className="absolute left-[-250px] bottom-[80px]  lg:left-[-250px] lg:bottom-[-250px] w-[600px] opacity-10 z-[1000]"
         src={starImg}
         alt="StarImage"
       /> 

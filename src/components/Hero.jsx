@@ -3,13 +3,14 @@ import { DrawCircle } from "./DrawCircle";
 import { motion } from "framer-motion";
 
 import { IoArrowForwardCircleOutline } from "react-icons/io5";
-import HeroImg from '../assets/heroImage.jpg'
+import tempWide from '../assets/tempWide.png'
 
 const Hero = () => {
   return (
-    <div className="relative lg:py-8 flex flex-col md:flex-row justify-evenly">
+    <div className="h-full relative lg:py-8 flex flex-col md:flex-row justify-evenly gap-24">
+
       {/* Left part (Content) */}
-      <div className="lg:w-[60%] flex flex-col gap-20 lg:gap-32 relative z-10 px-4 md:px-0">
+      <div className="lg:w-[60%] flex flex-col gap-20 lg:justify-between  relative z-10 px-4 md:px-0">
         {/* Main Heading */}
         <h1 className="font-kyiv font-normal text-6xl lg:text-8xl tracking-tight text-secondary">
           <span className="text-myBlack tracking-tighter ml-[-11px]">B.</span>
@@ -26,7 +27,7 @@ const Hero = () => {
         </div>
 
         {/* Featured Works */}
-        <div className="flex justify-start gap-24">
+        <div className="flex justify-start gap-24 ">
           <div className="flex flex-col items-center gap-4">
             <h6 className="formText leading-none text-myGrey">Featured Works</h6>
             <motion.div
@@ -59,16 +60,15 @@ const Hero = () => {
       </div>
 
       {/* Right Part (Image) */}
-      <div>
-      <img 
-      className=" border-4 mt-4 lg:mt-0 border-secondary mx-auto w-[350px] lg:h-[650px] lg:w-[540px]"
-      src={HeroImg} 
-      alt="HeroImage"
-       />
-      </div>
+      <img
+  className="w-[90%] -my-20 sm:my-0 sm:w-[350px] lg:w-[540px]  lg:h-[100%] mx-auto lg:mx-0 order-first lg:order-last object-cover object-center"
+  src={tempWide}
+  alt="HeroImage"
+/>
+
       
       
-      
+
     </div>
   );
 };

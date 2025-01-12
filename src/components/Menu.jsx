@@ -49,7 +49,7 @@ const MenuBar = () => {
 
       {/* Large Screen */}
       <motion.nav
-        className="hidden lg:flex justify-end gap-20"
+        className="hidden lg:flex justify-end gap-[90px]"
         initial="hidden"
         animate="visible"
         variants={containerVariants}
