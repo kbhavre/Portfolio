@@ -77,7 +77,7 @@ const MenuBar = () => {
             initial={{ x: "-100%" }}
             animate={{ x: 0 }}
             exit={{ x: "-100%" }}
-            transition={{ type: "keyframes", stiffness: 80 }}
+            transition={{type: "keyframes", stiffness: 80 }}
           >
             <div>
               {navLinks.map((link) => (

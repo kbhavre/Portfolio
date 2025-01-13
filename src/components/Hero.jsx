@@ -6,7 +6,7 @@ import HeroImage from '../assets/heroImage.jpg'
 
 const Hero = () => {
   return (
-    <div className="h-full relative lg:py-8 flex flex-col md:flex-row justify-evenly gap-24">
+    <div className="h-screen relative lg:pb-20 lg:pt-6 flex flex-col md:flex-row justify-evenly gap-24">
 
       {/* Left part (Content) */}
       <div className="lg:w-[60%] flex flex-col gap-20 lg:justify-between  relative z-10 px-4 md:px-0">
@@ -42,10 +42,12 @@ const Hero = () => {
               <IoArrowForwardCircleOutline className="h-10 w-10 text-myBlack" />
             </motion.div> */}
 
-            
+            <button className="z">
             <IoArrowForwardCircleOutline
       className="h-12 w-12 mt-1 text-myBlack transition-transform duration-300 ease-in-out transform hover:rotate-45 z-[1000]"
     />
+            </button>
+            
           </div>
 
           <h6 className="formText text-myGrey font-sans font-normal tracking-tight hidden lg:block">
