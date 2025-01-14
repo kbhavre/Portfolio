@@ -1,42 +1,30 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
 import { navLinks } from "../constants/index";
-import MenuForm from "./MenuForm"; // Import MenuForm
+import MenuForm from "./MenuForm"; 
+import { smMenuVariants, menuVariants, containerVariants} from '../motion/index'
+import MenuLogo from '../assets/menuLogo.svg'
 
 const MenuBar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const location = useLocation();
 
-  const menuVariants = {
-    hidden: {
-      x: 200,
-      opacity: 0,
-    },
-    visible: {
-      x: 0,
-      opacity: 1,
-      transition: {
-        type: "spring",
-        damping: 14,
-        stiffness: 90,
-      },
-    },
-  };
-
-  const containerVariants = {
-    hidden: {
-      opacity: 0,
-    },
-    visible: {
-      opacity: 1,
-      transition: {
-        staggerChildren: 0.18,
-      },
-    },
-  };
+  const isHomeRoute = location.pathname === "/";
 
   return (
     <div className="relative">
+
+      {/* Logo */}
+      {!isHomeRoute && (
+        <div className="absolute z-50">
+          <Link to="/">
+            <img src={MenuLogo} alt="MenuLogo" className="w-12 h-12 mt-2 object-contain"/>
+          </Link>
+
+        </div>
+      )}
+
       {/* Menu Button */}
       <div className="lg:hidden flex items-center justify-end p-4">
         <button
@@ -84,7 +72,7 @@ const MenuBar = () => {
                 <motion.div
                   key={link.id}
                   className="group text-right text-[48px] font-raleway leading-tight font-medium text-primary relative"
-                  variants={menuVariants}
+                  variants={smMenuVariants}
                   initial="hidden"
                   animate="visible"
                   exit="hidden"
@@ -102,7 +90,6 @@ const MenuBar = () => {
               ))}
             </div>
 
-            {/* MenuForm Component */}
             <MenuForm />
 
           </motion.div>

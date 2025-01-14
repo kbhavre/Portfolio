@@ -1,4 +1,3 @@
-1. fix hero section ui
+1. Fix the menubar logo (on sm screen after clicking the menubar should be inactivated)
 2. find a magnet button for featured works
-3. Add a delay in the menulinks (both stagger and div) for lg screen 
-4. fix the widht of the image for lg screens 
+3. fix the widht of the image for lg screens 

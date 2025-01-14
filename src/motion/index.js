@@ -24,3 +24,68 @@ export const slideUp = {
         }
     }
 }
+
+// Menu variants
+
+export const smMenuVariants = {
+    hidden: {
+      x: 200,
+      opacity: 0,
+    },
+    visible: {
+      x: 0,
+      opacity: 1,
+      transition: {
+        type: "spring",
+        damping: 14,
+        stiffness: 90,
+      },
+    },
+  };
+
+  export const menuVariants = {
+    hidden: {
+      x: 200,
+      opacity: 0,
+    },
+    visible: {
+      x: 0,
+      opacity: 1,
+      transition: {
+        delay: 1, // Add delay for large screens
+        type: "spring",
+        damping: 14,
+        stiffness: 90,
+      },
+    },
+  };
+
+  export const containerVariants = {
+    hidden: {
+      opacity: 0,
+    },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 1.58,
+        delayChildren: 1, // Add delay before children animations start
+      },
+    },
+  };
+
+  export const clipPathVariants = {
+    hidden: {
+        opacity: 0,
+        x: "-100%",
+    },
+    visible: {
+        opacity: 1,
+        x: 0,
+        transition: {
+        delay: 1, // Add delay for large screens
+        type: "spring",
+        damping: 14,
+        stiffness: 90,
+      },
+    }
+  }
