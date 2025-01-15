@@ -1,3 +1,4 @@
 1. Fix the menubar logo (on sm screen after clicking the menubar should be inactivated)
 2. find a magnet button for featured works
 3. fix the widht of the image for lg screens 
+4. Fix the work section (not able to scroll down)

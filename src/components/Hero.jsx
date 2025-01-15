@@ -72,7 +72,6 @@ const Hero = () => {
   alt="HeroImage"
   loading="lazy"
 />
-
     </div>
 
   );

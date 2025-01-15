@@ -19,9 +19,9 @@ const MenuBar = () => {
       {!isHomeRoute && (
         <div className="absolute z-50">
           <Link to="/">
-            <img src={MenuLogo} alt="MenuLogo" className="w-12 h-12 mt-2 object-contain"/>
+            <img src={MenuLogo} alt="MenuLogo" className="w-12 h-12 object-contain mx-4 my-2 lg:my-0 lg:mx-0"/>
+            {/* <h4 className="text-2xl font-raleway font-medium  text-secondary underline">Home</h4> */}
           </Link>
-
         </div>
       )}
 
