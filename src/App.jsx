@@ -30,17 +30,18 @@ const App = () => {
           <MenuBar /> 
           <AppRoutes /> 
           <motion.img
-            animate={{ rotate: [-360, 360] }}
-            transition={{
-              repeat: Infinity,
-              repeatType: "loop",
-              duration: 40,
-              ease: "linear",
-            }}
-            className="absolute left-[-250px] bottom-[80px] lg:left-[-250px] lg:bottom-[-250px] w-[600px] opacity-10 z-[1000]"
-            src={starImg}
-            alt="StarImage"
-          />
+              animate={{ rotate: [-360, 360] }}
+              transition={{
+                repeat: Infinity,
+                repeatType: "loop",
+                duration: 40,
+                ease: "linear",
+              }}
+              className="absolute left-[-250px] bottom-[80px] lg:left-[-250px] lg:bottom-[-250px] w-[600px] opacity-10 z-[0] pointer-events-none"
+              src={starImg}
+              alt="StarImage"
+            />
+          
         </>
       )}
     </div>

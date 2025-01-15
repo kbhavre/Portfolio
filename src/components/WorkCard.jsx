@@ -1,6 +1,9 @@
 import PropTypes from 'prop-types';
 
 const WorkCard = ({ title, img, tech }) => {
+
+  
+
   return (
     <div className="flex flex-col border border-secondary rounded-lg p-3 gap-4">
       {/* Image Section */}
@@ -15,7 +18,7 @@ const WorkCard = ({ title, img, tech }) => {
         {/* Tech Stack */}
         <div className="flex flex-wrap gap-2">
           {tech.map((techItem, index) => (
-            <h4 key={index} className="bg-secondary px-3 rounded-xl">
+            <h4 key={index} className="bg-secondary font-raleway px-3 rounded-xl">
               {techItem}
             </h4>
           ))}
