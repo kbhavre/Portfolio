@@ -16,7 +16,7 @@ export default {
         accent: "#FAEDBC",
         myBlack: "#111214",
         myGrey: "#C4C4C4"
-      }
+      },
     },
   },
   plugins: [],

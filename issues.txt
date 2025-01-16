@@ -1,4 +1,3 @@
 1. Fix the menubar logo (on sm screen after clicking the menubar should be inactivated)
 2. find a magnet button for featured works
 3. fix the widht of the image for lg screens 
-4. Add padding in the bottom of the nav and remove top padding from the pages 

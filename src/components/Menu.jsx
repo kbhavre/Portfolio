@@ -13,7 +13,7 @@ const MenuBar = () => {
   const isHomeRoute = location.pathname === "/";
 
   return (
-    <div className="relative">
+    <div className="relative mb-2 md:mb-10">
 
       {/* Logo */}
       {!isHomeRoute && (

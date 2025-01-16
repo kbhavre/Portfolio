@@ -60,9 +60,9 @@ const WorkCard = ({ title, img, tech, linkref }) => {
               translateX: "-50%",
               translateY: "-50%",
             }}
-            className="absolute z-20 px-4 py-1 rounded-full bg-secondary text-myBlack pointer-events-none"
+            className="absolute z-20 h-14 w-14 md:h-20 md:w-20 rounded-full bg-secondary pointer-events-none flex items-center justify-center text-myBlack text-[12px] md:text-lg font-raleway font-light"
           >
-            Check it Out
+            Click Me
           </motion.div>
         )}
 

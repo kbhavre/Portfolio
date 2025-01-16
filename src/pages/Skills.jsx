@@ -9,7 +9,7 @@ const Skills = () => {
       initial="hidden"
       animate="visible"
       variants={pageVariants}
-     className='py-6 px-4 md:px-0'>
+     className=' px-4 md:px-0'>
         <ClipPath/>
     </motion.div>
   )

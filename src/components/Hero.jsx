@@ -5,11 +5,11 @@ import HeroImage from "../assets/heroImage.jpg";
 
 const Hero = () => {
   return (
-    <div className="h-screen relative lg:pb-20 lg:pt-6 flex flex-col lg:flex-row justify-evenly ">
+    <div className="h-screen relative  lg:pb-32  flex flex-col lg:flex-row justify-evenly ">
       {/* Left part (Content) */}
       <div className="lg:w-[60%] flex flex-col gap-32 lg:justify-between  relative z-10 px-4 md:px-0">
         {/* Main Heading */}
-        <h1 className="font-kyiv font-normal text-6xl lg:text-8xl tracking-tight text-secondary">
+        <h1 className="font-kyiv font-normal text-6xl lg:text-8xl tracking-tight text-secondary ml-3 md:ml-0">
           <span className="text-myBlack tracking-tighter ml-[-11px]">B.</span>
           Kunal
         </h1>
@@ -25,7 +25,7 @@ const Hero = () => {
 
         {/* Featured Works */}
         <div className="flex justify-start gap-24 ">
-          <div className="flex flex-col items-center gap-4">
+          <div className="flex flex-col  md:items-center gap-4">
             <h6 className="formText leading-none text-myGrey">
               Featured Works
             </h6>

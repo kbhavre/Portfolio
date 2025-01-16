@@ -9,14 +9,15 @@ const Work = () => {
     initial="hidden"
     animate="visible"
     variants={pageVariants}
-    className="w-full h-screen overflow-y-auto px-4 md:px-0 pb-16 scrollbar-hide">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 my-8">
+    className="w-full h-screen overflow-y-auto px-4 md:px-0 pb-24 md:pb-36 scrollbar-hide">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 ">
         {projects.map((project) => (
           <WorkCard
             key={project.id}
             title={project.title}
             img={project.img}
             tech={project.tech}
+            linkref={project.linkref}
           />
         ))}
       </div>
