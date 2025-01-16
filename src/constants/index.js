@@ -26,49 +26,29 @@ export const projects = [
         id: 1,
         title: "Ninja Notes",
         img: img1,
-        tech: ["React", "Aceternity", "TypeScript", "Node.js", "MongoDB"] 
+        tech: ["React", "Aceternity", "TypeScript", "Node.js", "MongoDB"],
+        linkref: "https://ninjanotesorg.vercel.app/"
     },
     {
         id: 2,
         title: "Medicare",
         img: img2,
-        tech: ["React", "Javascript", "Stripe.js", "Node.js", "MongoDB"] 
+        tech: ["React", "Javascript", "Stripe.js", "Node.js", "MongoDB"],
+        linkref: "https://doctor-appointment-booking-silk.vercel.app/" 
     },
     {
         id: 3,
         title: "Nexcent",
         img: img3,
-        tech: ["React", "Tailwind", "Stripe.js", "Node.js", "MongoDB"] 
+        tech: ["React", "Tailwind", "Stripe.js", "Node.js", "MongoDB"],
+        linkref: "https://nexcent-sigma-eight.vercel.app/",
     },
     {
         id: 3,
         title: "Nexcent",
         img: img3,
-        tech: ["React", "Tailwind", "Stripe.js", "Node.js", "MongoDB"] 
-    },
-    {
-        id: 3,
-        title: "Nexcent",
-        img: img3,
-        tech: ["React", "Tailwind", "Stripe.js", "Node.js", "MongoDB"] 
-    },
-    {
-        id: 3,
-        title: "Nexcent",
-        img: img3,
-        tech: ["React", "Tailwind", "Stripe.js", "Node.js", "MongoDB"] 
-    },
-    {
-        id: 3,
-        title: "Nexcent",
-        img: img3,
-        tech: ["React", "Tailwind", "Stripe.js", "Node.js", "MongoDB"] 
-    },
-    {
-        id: 3,
-        title: "Nexcent",
-        img: img3,
-        tech: ["React", "Tailwind", "Stripe.js", "Node.js", "MongoDB"] 
+        tech: ["React", "Tailwind", "Stripe.js", "Node.js", "MongoDB"],
+        linkref: "https://nexcent-sigma-eight.vercel.app/",
     },
     
 ]

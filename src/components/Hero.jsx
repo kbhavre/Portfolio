@@ -1,12 +1,11 @@
 import { Link } from "react-router-dom";
 import { DrawCircle } from "./DrawCircle";
 import { IoArrowForwardCircleOutline } from "react-icons/io5";
-import HeroImage from '../assets/heroImage.jpg'
+import HeroImage from "../assets/heroImage.jpg";
 
 const Hero = () => {
   return (
     <div className="h-screen relative lg:pb-20 lg:pt-6 flex flex-col lg:flex-row justify-evenly ">
-
       {/* Left part (Content) */}
       <div className="lg:w-[60%] flex flex-col gap-32 lg:justify-between  relative z-10 px-4 md:px-0">
         {/* Main Heading */}
@@ -27,26 +26,12 @@ const Hero = () => {
         {/* Featured Works */}
         <div className="flex justify-start gap-24 ">
           <div className="flex flex-col items-center gap-4">
-            <h6 className="formText leading-none text-myGrey">Featured Works</h6>
-
-            {/* <motion.div
-              animate={{ rotate: [-360, 360] }}
-              transition={{
-                duration: 8,
-                repeat: Infinity,
-                repeatType: "loop",
-                ease: "linear",
-              }}
-            >
-              <IoArrowForwardCircleOutline className="h-10 w-10 text-myBlack" />
-            </motion.div> */}
-
-            <button className="z">
-            <IoArrowForwardCircleOutline
-      className="h-12 w-12 mt-1 text-myBlack transition-transform duration-300 ease-in-out transform hover:rotate-45 z-[1000]"
-    />
-            </button>
-            
+            <h6 className="formText leading-none text-myGrey">
+              Featured Works
+            </h6>
+            <Link to="/work">
+            <IoArrowForwardCircleOutline className="h-12 w-12 mt-1 text-myBlack transition-transform duration-300 ease-in-out transform hover:-rotate-45 z-[1000]" />
+            </Link>
           </div>
 
           <h6 className="formText text-myGrey font-sans font-normal tracking-tight hidden lg:block">
@@ -54,12 +39,12 @@ const Hero = () => {
           </h6>
 
           <div className="flex flex-col gap-5 formText underline text-myBlack font-semibold">
-            <h4>kbhavare78@gmail.com</h4>
+            <a href="mailto:kbhavare78@gmail.com" target="_blank">kbhavare78@gmail.com</a>
 
             <div className="flex flex-col ">
-              <Link to="https://www.instagram.com/kbhaavre/">Instagram</Link>
-              <Link to="https://www.instagram.com/kbhaavre/">LinkedIn</Link>
-              <Link to="https://www.instagram.com/kbhaavre/">Github</Link>
+              <Link target="_blank" to="https://www.instagram.com/kbhaavre/">Instagram</Link>
+              <Link target="_blank" to="https://www.linkedin.com/in/kunal-bhavare-467863228/">LinkedIn</Link>
+              <Link target="_blank" to="https://github.com/kbhavre">Github</Link>
             </div>
           </div>
         </div>
@@ -67,13 +52,12 @@ const Hero = () => {
 
       {/* Right Part (Image) */}
       <img
-  className="w-[90%] -my-20 sm:my-0 sm:w-[350px] lg:w-[540px]  lg:h-[100%] mx-auto lg:mx-0 order-first lg:order-last object-cover object-center"
-  src={HeroImage}
-  alt="HeroImage"
-  loading="lazy"
-/>
+        className="w-[90%] -my-20 sm:my-0 sm:w-[350px] lg:w-[540px]  lg:h-[100%] mx-auto lg:mx-0 order-first lg:order-last object-cover object-center rounded-lg"
+        src={HeroImage}
+        alt="HeroImage"
+        loading="lazy"
+      />
     </div>
-
   );
 };
 
