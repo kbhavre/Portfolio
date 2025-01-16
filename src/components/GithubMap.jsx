@@ -3,7 +3,7 @@ import CalendarHeatmap from "react-calendar-heatmap";
 import "react-calendar-heatmap/dist/styles.css";
 
 const USER_NAME = "kbhavre";
-const nothing = "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";
+const GITHUB_TOKEN = "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";
 
 const GithubMap = () => {
   const [data, setData] = useState([]);
@@ -37,7 +37,7 @@ const GithubMap = () => {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
-            Authorization: `Bearer ${nothing}`,
+            Authorization: `Bearer ${GITHUB_TOKEN}`,
           },
           body: JSON.stringify({ query }),
         });
