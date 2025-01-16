@@ -41,7 +41,10 @@ body{
     .formText{
         @apply text-primary text-sm font-raleway uppercase font-medium tracking-wide
     }
-        
+    
+    .paraText{
+        @apply text-justify text-lg md:text-2xl font-raleway font-medium w-[90%] md:w-[80%] leading-tight tracking-wide
+    }
 }
 /* Add this to your Tailwind CSS or custom styles */
 

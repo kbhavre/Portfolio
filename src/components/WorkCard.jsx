@@ -2,7 +2,7 @@ import { motion, useMotionValue, useSpring } from "framer-motion";
 import PropTypes from "prop-types";
 import { useState } from "react";
 
-const WorkCard = ({ title, img, tech, linkref }) => {
+const WorkCard = ({ title, img, tech, para, linkref, }) => {
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
 
@@ -79,15 +79,20 @@ const WorkCard = ({ title, img, tech, linkref }) => {
             {title}
           </h1>
 
+          {/* Paragraph */}
+          <p className="font-raleway text-xs md:text-sm">
+            {para}
+          </p>
+
           {/* Tech Stack */}
           <div className="flex flex-wrap gap-2">
             {tech.map((techItem, index) => (
-              <h4
+              <span
                 key={index}
-                className="border border-myBlack font-raleway px-3 rounded-xl"
+                className="border border-myBlack font-raleway text-xs md:text-sm px-3 rounded-xl"
               >
                 {techItem}
-              </h4>
+              </span>
             ))}
           </div>
         </div>
@@ -100,6 +105,7 @@ WorkCard.propTypes = {
   title: PropTypes.string.isRequired,
   img: PropTypes.string.isRequired,
   tech: PropTypes.arrayOf(PropTypes.string).isRequired,
+  para: PropTypes.string.isRequired,
   linkref: PropTypes.string.isRequired,
 };
 

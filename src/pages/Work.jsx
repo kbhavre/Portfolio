@@ -17,6 +17,7 @@ const Work = () => {
             title={project.title}
             img={project.img}
             tech={project.tech}
+            para={project.para}
             linkref={project.linkref}
           />
         ))}
