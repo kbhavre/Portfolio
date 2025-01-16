@@ -3,7 +3,7 @@ import CalendarHeatmap from "react-calendar-heatmap";
 import "react-calendar-heatmap/dist/styles.css";
 
 const USER_NAME = "kbhavre";
-const GITHUB_TOKEN = "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";
+const GITHUB_TOKEN = "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";
 
 const GithubMap = () => {
   const [data, setData] = useState([]);
