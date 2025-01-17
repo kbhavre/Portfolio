@@ -1,4 +1,4 @@
-import img1 from '../assets/NinjaNotes.png';
+import img1 from '../assets/Medicare.png';
 import img2 from '../assets/Medicare.png';
 import img3 from '../assets/Nexcent.png';
 import img4 from '../assets/DiaAlert.png';
