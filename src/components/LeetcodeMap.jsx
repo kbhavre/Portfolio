@@ -1,6 +1,6 @@
 import LeetCodeCalendar from 'leetcode-calendar';
 
-export default function LeetcodeHeatmap() {
+export default function LeetcodeMap() {
   const exampleTheme = {
     light: [
       'rgb(235, 235, 235)',
@@ -19,8 +19,7 @@ export default function LeetcodeHeatmap() {
   };
 
   return (
-    <div className=" w-full font-raleway text-myBlack font-normal ">
-      <div className="">
+    <div className=" w-full font-raleway text-myBlack font-normal flex justify-center ">
         <LeetCodeCalendar
           username="kbhavre78"
           blockSize={15}
@@ -33,7 +32,6 @@ export default function LeetcodeHeatmap() {
             padding: "8px",
             }}
         />
-      </div>
     </div>
   );
 }

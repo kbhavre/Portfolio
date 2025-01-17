@@ -28,7 +28,6 @@ const AppRoutes = () => {
                 </motion.div>
           }
         />
-        {/* <Route path="/" element={<Hero/>}/> */}
         <Route path="/about" element={<About />} />
         <Route path="/skills" element={<Skills />} />
         <Route path="/contact" element={<Contact />} />

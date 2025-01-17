@@ -3,7 +3,7 @@ import img2 from '../assets/Medicare.png';
 import img3 from '../assets/Nexcent.png';
 import img4 from '../assets/DiaAlert.png';
 
-export const navLinks = [
+export const lgNavLinks = [
     {   id: 1,
         title: "Work",
         href: "/work"
@@ -17,6 +17,30 @@ export const navLinks = [
         href: "/about"
     },
     {   id: 4,
+        title: "Contact",
+        href: "/contact"
+    },
+]
+
+export const smNavLinks = [
+    {
+        id: 1,
+        title: "Home",
+        href: "/"
+    },
+    {   id: 2,
+        title: "Work",
+        href: "/work"
+    },
+    {   id: 3,
+        title: "Skills",
+        href: "/skills"
+    },
+    {   id: 4,
+        title: "About",
+        href: "/about"
+    },
+    {   id: 5,
         title: "Contact",
         href: "/contact"
     },

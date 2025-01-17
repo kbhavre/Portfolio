@@ -1,10 +1,8 @@
 import { motion } from "framer-motion";
 import ClipPath from "../components/ClipPath";
 import { pageVariants } from "../motion";
-import LeetcodeHeatmap from "../components/LeetcodeHeatmap";
-// import GithubMap from "../components/GithubMap";
-
-
+import LeetcodeMap from "../components/LeetcodeMap";
+import GithubMap from "../components/GithubMap";
 
 const Skills = () => {
   return (
@@ -16,34 +14,38 @@ const Skills = () => {
     >
       <p className="w-full md:w-4/5 text-center mx-auto font-raleway text-myBlack font-medium text-lg md:text-2xl tracking-tight leading-tighter mb-6">
         I am someone who tries many things out, gets in trouble, and eventually
-        solves it. Being a self-taught guy (with GPT, docs and random youtube videos), I haven't
-        followed any specific path. I have tried out Machine Learning, a bit of Designing, but then shifted to development.
+        solves it. Being a self-taught guy (with GPT, docs and random youtube
+        videos), I haven not followed any specific path. I have tried out
+        Machine Learning, a bit of Designing, but then shifted to development.
       </p>
 
       {/* Skills */}
-      <ClipPath/>
-      {/* <div className="flex flex-col gap-2">
-      <h1 className="font-kyiv text-secondary font-medium text-2xl md:text-6xl">Skills</h1>
-      <ClipPath />
-      </div> */}
-      
+      <div className="flex flex-col gap-2 text-center">
+        <h1 className="font-kyiv text-secondary font-medium text-2xl md:text-6xl">
+          Skills
+        </h1>
+        <ClipPath />
+      </div>
 
+      <p className="w-full md:w-4/5 text-center mx-auto font-raleway text-myBlack font-medium text-lg md:text-2xl tracking-tight leading-tighter mb-6 mt-10">
+      I am passionate about development, design, and problem-solving, constantly alternating between building innovative projects and tackling complex challenges. Below are my contributions, reflecting my dedication to both fields.
+      </p>
 
       {/* Github Map */}
-      {/* <div className="flex flex-col gap-2 mt-6 md:mt-12">
-      <h1 className="font-kyiv text-secondary font-medium text-2xl md:text-6xl">Github Contributions</h1>
-      <GithubMap/>
-      </div> */}
-      
-      
-      
-      {/* Leetcode Map */}
-      <div className="flex flex-col gap-2 mt-6 md:mt-12">
-      <h1 className="font-kyiv text-secondary font-medium text-2xl md:text-6xl">Leetcode Submissions</h1>
-      <LeetcodeHeatmap/>
+      <div className="flex flex-col gap-2 mt-6 md:mt-12 text-center">
+        <h1 className="font-kyiv text-secondary font-medium text-2xl md:text-6xl">
+          Github Contributions
+        </h1>
+        <GithubMap />
       </div>
-      
-      
+
+      {/* Leetcode Map */}
+      <div className="flex flex-col gap-2 mt-6 md:mt-12 text-center">
+        <h1 className="font-kyiv text-secondary font-medium text-2xl md:text-6xl">
+          Leetcode Submissions
+        </h1>
+        <LeetcodeMap />
+      </div>
     </motion.div>
   );
 };

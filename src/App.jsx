@@ -27,6 +27,10 @@ const App = () => {
 
       {!isLoading && (
         <>
+
+          {/* Following Pointer */}
+          
+
           <MenuBar /> 
           <AppRoutes /> 
           <motion.img

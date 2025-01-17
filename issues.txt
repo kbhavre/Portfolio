@@ -1,3 +1,5 @@
-1. Fix the menubar logo (on sm screen after clicking the menubar should be inactivated)
-2. find a magnet button for featured works
-3. fix the widht of the image for lg screens 
+1. Add community position in about section 
+2. add following pointer
+3. Add string for dividing the content
+4. Create Contact page
+5. Add favicon
