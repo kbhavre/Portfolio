@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import ClipPath from "../components/ClipPath";
 import { pageVariants } from "../motion";
+import LeetcodeHeatmap from "../components/LeetcodeHeatmap";
 // import GithubMap from "../components/GithubMap";
 
 
@@ -37,6 +38,11 @@ const Skills = () => {
       
       
       {/* Leetcode Map */}
+      <div className="flex flex-col gap-2 mt-6 md:mt-12">
+      <h1 className="font-kyiv text-secondary font-medium text-2xl md:text-6xl">Leetcode Submissions</h1>
+      <LeetcodeHeatmap/>
+      </div>
+      
       
     </motion.div>
   );
