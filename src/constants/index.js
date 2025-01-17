@@ -1,8 +1,7 @@
-import img1 from '../assets/NinjaNotes.png';
-import img2 from '../assets/Medicare.png';
-import img3 from '../assets/Nexcent.png';
-import img4 from '../assets/DiaAlert.png';
-
+import img1 from '../../public/NinjaNotes.png';
+import img2 from '../../public/Medicare.png';
+import img3 from '../../public/Nexcent.png';
+import img4 from '../../public/DiaAlert.png';
 
 export const lgNavLinks = [
     {   id: 1,
