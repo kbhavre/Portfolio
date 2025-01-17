@@ -38,7 +38,7 @@ const MenuForm = () => {
       .then(
         (response) => {
           console.log("Email sent successfully:", response.status, response.text);
-          alert(`Thank you, ${formData.name}! We'll get back to you soon.`);
+          alert(`Thank you, ${formData.name}! I'll get back to you soon.`);
           setFormData({ name: "", email: "" }); // Reset form
         },
         (error) => {

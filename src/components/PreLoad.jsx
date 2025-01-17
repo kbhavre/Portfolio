@@ -1,11 +1,9 @@
 import { motion } from "framer-motion";
 import { opacity, slideUp } from "../motion/index";
 import { useEffect, useState } from "react";
-
-// import loadingImg from '../assets/loadingImg.svg'
 import loadingImg from '../assets/preLoad.svg';
 
-export default function PreLoad() {
+const PreLoad = () => {
 	const [dimension, setDimension] = useState({ width: 0, height: 0 });
 
 	useEffect(() => {
@@ -93,3 +91,5 @@ export default function PreLoad() {
 		</motion.div>
 	);
 }
+
+export default PreLoad;

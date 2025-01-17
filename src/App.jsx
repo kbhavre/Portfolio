@@ -1,12 +1,11 @@
 // src/App.jsx
 import MenuBar from "./components/Menu";
 import AppRoutes from "./routes/AppRoutes";
-import PreLoad from "./components/Preload";
 import starImg from "./assets/star.svg";
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import FollowingPointer from './components/FollowingPointer';
-
+import PreLoad from './components/PreLoad';
 
 const App = () => {
   const [isLoading, setIsLoading] = useState(true);
@@ -23,7 +22,7 @@ const App = () => {
   return (
     <div className="h-screen relative overflow-hidden w-full bg-primary lg:px-12 lg:py-8 md:px-6 md:py-4">
       <AnimatePresence mode="wait">
-        {isLoading && <PreLoad />}
+        {isLoading && <PreLoad/>}
       </AnimatePresence>
 
       {!isLoading && (
