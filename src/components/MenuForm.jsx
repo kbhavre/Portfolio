@@ -47,17 +47,17 @@ const MenuForm = () => {
   return (
     <div className="flex flex-col gap-1 w-full" >
 
-      <h6 className="formText">Have an Idea?</h6>
+      <h6 className="formText block lg:hidden">Have an Idea?</h6>
 
       <form onSubmit={handleSubmit} className="flex flex-col gap-2">
-        <div className="flex gap-[2px] ">
+        <div className="flex flex-row lg:flex-col gap-[2px] ">
           <input
             type="text"
             name="name"
             placeholder="Name . . ."
             value={formData.name}
             onChange={handleChange}
-            className="bg-[#B2472E] px-2 py-4 w-[40%] placeholder:formText"
+            className="bg-[#B2472E] px-2 py-4 w-[40%] lg:w-full placeholder:formText"
           />
           <input
             type="email"
