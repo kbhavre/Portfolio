@@ -25,7 +25,7 @@ export default function GithubMap() {
           username="kbhavre"
           blockSize={15}
           blockMargin={5}
-          fontSize={12} // Set font size to 8px
+          fontSize={10} // Set font size to 8px
           theme={exampleTheme}
           style={{ 
             maxWidth: "100%",

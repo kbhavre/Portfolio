@@ -1,13 +1,14 @@
 import { Link } from "react-router-dom";
-import { DrawCircle } from "./DrawCircle";
+import { DrawCircle } from "../components/DrawCircle";
 import { IoArrowForwardCircleOutline } from "react-icons/io5";
 import HeroImage from "../assets/heroImage.jpg";
+
 
 const Hero = () => {
   return (
     <div className="h-screen relative  lg:pb-32  flex flex-col lg:flex-row justify-evenly ">
       {/* Left part (Content) */}
-      <div className="lg:w-[60%] flex flex-col gap-20 sm:gap-32 lg:justify-between  relative z-10 px-4 md:px-0">
+      <div className="lg:w-[60%] flex flex-col gap-20  lg:gap-0 lg:justify-between  relative z-10 px-4 md:px-0">
         {/* Main Heading */}
         <h1 className="font-kyiv font-normal text-6xl lg:text-8xl tracking-tight text-secondary ml-3 md:ml-0">
           <span className="text-myBlack tracking-tighter ml-[-11px]">B.</span>

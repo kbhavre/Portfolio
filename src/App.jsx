@@ -20,7 +20,7 @@ const App = () => {
   }, []);
 
   return (
-    <div className="h-screen relative overflow-hidden w-full bg-primary lg:px-12 lg:py-8 md:px-6 md:py-4">
+    <div className="min-h-screen relative overflow-hidden w-full bg-primary lg:px-12 lg:py-8 md:px-6 md:py-4">
       <AnimatePresence mode="wait">
         {isLoading && <PreLoad/>}
       </AnimatePresence>

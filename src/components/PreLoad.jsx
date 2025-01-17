@@ -35,11 +35,11 @@ const PreLoad = () => {
 			variants={slideUp}
 			initial="initial"
 			exit="exit"
-			className="h-screen w-screen flex items-center justify-center fixed z-[10000] lg:-ml-12 bg-secondary ">
+			className="h-screen w-full flex items-center justify-center fixed z-[10000] bg-secondary ml-0 lg:-ml-12">
 			{dimension.width > 0 && (
 				<>
 					<motion.div
-						className="flex gap-10 items-center absolute z-10 overflow-hidden sm:gap-3 xm:gap-3"
+						className="flex gap-3 md:gap-10 items-center absolute z-10 overflow-hidden"
 						variants={opacity}
 						initial="initial"
 						animate="enter">
@@ -51,8 +51,8 @@ const PreLoad = () => {
 								delay: 0.5,
 								ease: [0.76, 0, 0.24, 1],
 							}}
-							className="font-kyiv text-myBlack md:text-[40px] sm:text-[20px] leading-tight tracking-tighter ">
-							Great Designs
+							className="font-kyiv text-myBlack font-medium text-3xl md:text-5xl leading-tight tracking-tighter ">
+							Think
 						</motion.p>
 						<motion.img
 							initial={{ rotate: 0 }}
@@ -73,9 +73,9 @@ const PreLoad = () => {
 								delay: 0.5,
 								ease: [0.76, 0, 0.24, 1],
 							}}
-							className=" font-kyiv text-myBlack md:text-[40px] sm:text-[20px] leading-tight tracking-tighter">
+							className="font-kyiv text-myBlack font-medium text-3xl md:text-5xl leading-tight tracking-tighter ">
 							{/* Require Patience */}
-                            Take Time
+                            Build
 						</motion.p>
 					</motion.div>
 					<svg className="absolute top-0 w-full h-calc-100">
