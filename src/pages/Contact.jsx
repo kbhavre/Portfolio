@@ -6,7 +6,7 @@ import MenuForm from '../components/MenuForm';
 
 const Contact = () => {
 
-  const phrases = "HAVE ANY QUERIES?"
+  const phrases = "HAVE AN IDEA?"
   return (
     <motion.div
     initial="hidden"

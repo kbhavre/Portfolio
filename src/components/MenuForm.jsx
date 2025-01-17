@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { FaArrowRight } from "react-icons/fa6";
+import emailjs from "emailjs-com";
 
 const MenuForm = () => {
   const [formData, setFormData] = useState({ name: "", email: "" });
@@ -21,12 +22,31 @@ const MenuForm = () => {
       alert("Please enter a valid email address.");
       return;
     }
-    // Process Form Data
-    console.log("Form Submitted:", formData);
-    alert(`Thank you, ${formData.name}! We'll get back to you soon.`);
-    setFormData({ name: "", email: "" }); // Reset form
-  };
 
+    // Send Email
+    emailjs
+      .send(
+        "service_ivogum4", // Replace with your EmailJS Service ID
+        "template_ohfsm0a", // Replace with your EmailJS Template ID
+        {
+          name: formData.name,
+          email: formData.email,
+          message: "A new user submitted the form!",
+        },
+        "39HfF5Z4ipTQkwe19" // Replace with your EmailJS User ID
+      )
+      .then(
+        (response) => {
+          console.log("Email sent successfully:", response.status, response.text);
+          alert(`Thank you, ${formData.name}! We'll get back to you soon.`);
+          setFormData({ name: "", email: "" }); // Reset form
+        },
+        (error) => {
+          console.error("Failed to send email:", error);
+          alert("There was an error sending your email. Please try again.");
+        }
+      );
+  };
 
   const menuVariants = {
     hidden: {
@@ -45,12 +65,11 @@ const MenuForm = () => {
   };
 
   return (
-    <div className="flex flex-col gap-1 w-full" >
-
+    <div className="flex flex-col gap-1 w-full">
       <h6 className="formText block lg:hidden">Have an Idea?</h6>
 
       <form onSubmit={handleSubmit} className="flex flex-col gap-2">
-        <div className="flex flex-row lg:flex-col gap-[2px] ">
+        <div className="flex flex-row lg:flex-col gap-[2px]">
           <input
             type="text"
             name="name"
@@ -65,26 +84,27 @@ const MenuForm = () => {
             placeholder="Email Address . . ."
             value={formData.email}
             onChange={handleChange}
-            className="bg-[#B2472E] px-2 py-4 w-full placeholder:formText "
+            className="bg-[#B2472E] px-2 py-4 w-full placeholder:formText"
           />
         </div>
         <button
           type="submit"
           className="bg-primary px-2 py-4 flex items-center gap-4"
         >
-          <h6 className="formText text-lg text-myBlack font-semibold ">Hey there</h6>
+          <h6 className="formText text-lg text-myBlack font-semibold">
+            Hey there
+          </h6>
           <motion.div
             variants={menuVariants}
-                  initial="hidden"
-                  animate="visible"
-                  exit="hidden"
+            initial="hidden"
+            animate="visible"
+            exit="hidden"
           >
-            <FaArrowRight className="h-6 w-6 mb-[2px]"/>
+            <FaArrowRight className="h-6 w-6 mb-[2px]" />
           </motion.div>
         </button>
       </form>
     </div>
-    
   );
 };
 
