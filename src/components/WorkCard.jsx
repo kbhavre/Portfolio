@@ -37,7 +37,7 @@ const WorkCard = ({ title, img, tech, para, linkref, }) => {
           setIsPointerVisible(false);
           setIsHovered(false); 
         }}
-        className="flex flex-col border border-secondary rounded-lg p-3 gap-4 relative overflow-hidden"
+        className="cursor-none flex flex-col border border-secondary rounded-lg p-3 gap-4 relative overflow-hidden"
       >
         {/* Box */}
         <motion.div

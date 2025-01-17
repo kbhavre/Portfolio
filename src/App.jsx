@@ -5,6 +5,7 @@ import PreLoad from "./components/Preload";
 import starImg from "./assets/star.svg";
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import FollowingPointer from './components/FollowingPointer';
 
 
 const App = () => {
@@ -29,6 +30,8 @@ const App = () => {
         <>
 
           {/* Following Pointer */}
+          <FollowingPointer/>
+          
           
 
           <MenuBar /> 
