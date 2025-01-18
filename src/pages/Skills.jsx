@@ -1,15 +1,15 @@
 import { motion } from "framer-motion";
 import ClipPath from "../components/ClipPath";
-import { pageVariants } from "../motion";
+// import { pageVariants } from "../motion";
 import LeetcodeMap from "../components/LeetcodeMap";
 import GithubMap from "../components/GithubMap";
 
 const Skills = () => {
   return (
     <motion.div
-      initial="hidden"
-      animate="visible"
-      variants={pageVariants}
+      // initial="hidden"
+      // animate="visible"
+      // variants={pageVariants}
       className="w-full h-screen overflow-y-auto px-4 md:px-0 pb-40 md:pb-36 scrollbar-hide"
     >
       <p className="w-full md:w-4/5 text-center mx-auto paraText mb-6">

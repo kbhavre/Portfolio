@@ -1,6 +1,8 @@
 import { motion } from 'framer-motion'
 import { pageVariants } from '../motion'
 import { DrawCircle } from '../components/DrawCircle'
+import CommunityCard from '../components/CommunityCard'
+import { communityData } from '../constants'
 
 const About = () => {
   return (
@@ -23,9 +25,23 @@ const About = () => {
       <div className="flex flex-col items-center gap-2 mt-8">
       <h1 className="font-kyiv text-secondary font-medium text-2xl md:text-6xl ">Community Work</h1>
       <p className='paraText'>
-      I am actively in several technical clubs at my college  <span className='text-secondary'>Mahakal Institute of Technology</span>. I have organized bootcamps, where I taught TypeScript and provided roadmaps on starting the coding journey. Guiding my peers and juniors, I helped them build a strong foundation in programming. 
+      I am actively involved in several technical clubs at my college  <span className='text-secondary'>Mahakal Institute of Technology</span>. I have organized bootcamps, where I taught TypeScript and provided roadmaps on starting the coding journey. Guiding my peers and juniors, I helped them build a strong foundation in programming. 
       </p>
+
+      <div className='grid grid-cols-1 md:grid-cols-2 gap-4 w-[90%] md:w-[80%]' >
+      {communityData.map((card)=>(
+        <CommunityCard
+          key={card.id}
+          title={card.title}
+          img={card.img}
+          position={card.position}
+          duration={card.duration}
+        />
+      ))}
+      </div>
       </div> 
+
+
 
        {/* About Me Section */}
        <div className="flex flex-col items-center gap-2 mt-8">

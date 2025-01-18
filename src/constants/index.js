@@ -41,6 +41,23 @@ export const smNavLinks = [
     },
 ]
 
+export const communityData = [
+    {
+        id: 1,
+        title: "Google Developer Student Club",
+        img: "/gdscLogo.svg",
+        position: "Cloud Computing and ML Lead",
+        duration: "Sep 2022 - Sep 2024",
+    },
+    {
+        id: 2,
+        title: "Meta Developer Circle",
+        img: "/mdcLogo.png",
+        position: "Technical Lead",
+        duration: "Nov 2022 - Sep 2023",
+    },
+]
+
 export const projects = [
     {
         id: 1,

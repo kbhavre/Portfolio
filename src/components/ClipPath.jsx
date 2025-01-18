@@ -96,7 +96,7 @@ export const LinkBox = ({ Icon, name, href }) => {
           animate={{ opacity: 1, x: 0 }}
           exit={{ opacity: 0, x: 10 }}
           transition={{ ease: "easeInOut"}}
-          className="absolute bottom-2 formText text-center mx-auto w-full"
+          className="absolute bottom-2 formText text-[10px] md:text-sm text-center mx-auto w-full"
         >
           {name}
         </motion.span>
