@@ -4,7 +4,6 @@ import PropTypes from "prop-types";
 export const DrawCircle = ({ text }) => {
   return (
     <span className="inline-block"> 
-      <h1 className=" inline-block relative"> 
         <span className="relative ">
           {text}
           <svg
@@ -26,7 +25,6 @@ export const DrawCircle = ({ text }) => {
             />
           </svg>
         </span>
-      </h1>
     </span>
   );
 };

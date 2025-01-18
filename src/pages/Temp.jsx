@@ -6,7 +6,7 @@ import HeroImage from "../assets/heroImage.jpg";
 
 const Hero = () => {
   return (
-    <div className="h-screen relative  lg:pb-32  flex flex-col lg:flex-row justify-evenly ">
+    <div className="min-h-screen relative pb-10 lg:pb-32  flex flex-col lg:flex-row justify-evenly overflow-y-scroll">
       {/* Left part (Content) */}
       <div className="lg:w-[60%] flex flex-col gap-20  lg:gap-0 lg:justify-between  relative z-10 px-4 md:px-0">
         {/* Main Heading */}
@@ -16,8 +16,8 @@ const Hero = () => {
         </h1>
 
         {/* Paragraph */}
-        <div className="flex justify-center -mt-10 lg:mt-0">
-          <p className="inline-block text-justify text-lg md:text-2xl font-raleway font-medium w-[80%] lg:w-[50%] leading-tight tracking-tight">
+        <div className="flex justify-center">
+          <p className="inline-block text-justify text-lg md:text-2xl font-raleway font-medium w-[80%] lg:w-[50%] leading-tight tracking-tight mt-5 lg:mt-0">
             I’m a creative designer and <DrawCircle text="Frontend Developer" />
             , specializing in intuitive interfaces, seamless experiences, and
             visually engaging web solutions.

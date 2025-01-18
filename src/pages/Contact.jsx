@@ -12,7 +12,7 @@ const Contact = () => {
     initial="hidden"
     animate="visible"
     variants={pageVariants}
-     className='h-screen w-full flex flex-col justify-center items-center pb-24'>
+     className='min-h-screen w-full flex flex-col justify-center items-center pb-24'>
     
 
     <div className="flex items-center justify-center flex-col gap-y-1 w-full h-auto ">
@@ -33,15 +33,15 @@ const Contact = () => {
 						initial={{ opacity: 0, scale: 0 }}
 						whileInView={{ opacity: 1, scale: 1 }}
 						transition={{ ease: "easeInOut", duration: 0.5, delay: 1 }}>
-						<Link
-							href={"mailto:kbhavre78@gmail.com?subject=Portfolio%20Website"}
+						<a
+							href="mailto:kbhavre78@gmail.com?subject=Portfolio-Inquiry"
 							className="uppercase font-raleway text-xl md:text-2xl text-myBlack tracking-wider font-semibold">
 							Kbhavare78@gmail.com
-						</Link>
+						</a>
 					</motion.div>
 				</div>
 
-        <div className='hidden lg:block bg-secondary rounded-lg w-[70%] p-2 mt-6'>
+        <div className='bg-secondary rounded-lg w-[70%] p-2 mt-6'>
         <MenuForm/>
         </div>
         

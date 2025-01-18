@@ -10,7 +10,7 @@ const Skills = () => {
       initial="hidden"
       animate="visible"
       variants={pageVariants}
-      className="w-full h-screen overflow-y-auto px-4 md:px-0 pb-24 md:pb-36 scrollbar-hide"
+      className="w-full min-h-screen overflow-y-scroll px-4 md:px-0 pb-24 md:pb-36 scrollbar-hide"
     >
       <p className="w-full md:w-4/5 text-center mx-auto font-raleway text-myBlack font-medium text-lg md:text-2xl tracking-tight leading-tighter mb-6">
         I am someone who tries many things out, gets in trouble, and eventually
