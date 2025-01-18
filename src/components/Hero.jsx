@@ -5,7 +5,7 @@ import HeroImage from "../assets/heroImage.jpg";
 
 const Hero = () => {
   return (
-    <div className="h-screen relative  lg:pb-32  flex flex-col lg:flex-row justify-evenly ">
+    <div className="h-screen relative pb-8 lg:pb-32  flex flex-col lg:flex-row justify-evenly ">
       {/* Left part (Content) */}
       <div className="lg:w-[60%] flex flex-col gap-16 lg:justify-between  relative z-10 px-4 md:px-0">
         {/* Main Heading */}
@@ -52,7 +52,7 @@ const Hero = () => {
 
       {/* Right Part (Image) */}
       <img
-        className="w-[90%] sm:my-0 sm:w-[350px] lg:w-[540px]  lg:h-[100%] mx-auto lg:mx-0 order-first lg:order-last object-cover object-center rounded-lg -my-20"
+        className="w-[90%] sm:my-0 sm:w-[350px] lg:w-[540px]  lg:h-[100%] mx-auto lg:mx-0 order-first lg:order-last object-cover object-center rounded-lg -my-24"
         src={HeroImage}
         alt="HeroImage"
         loading="lazy"
