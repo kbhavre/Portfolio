@@ -61,7 +61,7 @@ const MenuBar = () => {
       <AnimatePresence>
         {isMenuOpen && (
           <motion.div
-            className="z-40 lg:hidden fixed top-0 left-0 w-full h-screen bg-secondary flex flex-col items-end justify-end gap-36 p-4"
+            className="z-40 lg:hidden fixed top-0 left-0 w-full min-h-screen bg-secondary flex flex-col items-end justify-end overflow-y-scroll gap-36 p-4"
             initial={{ x: "-100%" }}
             animate={{ x: 0 }}
             exit={{ x: "-100%" }}
