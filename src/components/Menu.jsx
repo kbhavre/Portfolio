@@ -61,7 +61,7 @@ const MenuBar = () => {
       <AnimatePresence>
         {isMenuOpen && (
           <motion.div
-            className="z-40 lg:hidden fixed top-0 left-0 w-full min-h-screen bg-secondary flex flex-col items-end justify-end overflow-y-scroll gap-36 p-4"
+            className="z-40 lg:hidden fixed top-0 left-0 w-full min-h-screen bg-secondary flex flex-col items-end justify-end overflow-y-scroll  p-4 pb-24"
             initial={{ x: "-100%" }}
             animate={{ x: 0 }}
             exit={{ x: "-100%" }}
@@ -71,7 +71,7 @@ const MenuBar = () => {
               {smNavLinks.map((link) => (
                 <motion.div
                   key={link.id}
-                  className="group text-right text-[48px] font-raleway leading-tight font-medium text-primary relative"
+                  className="group text-right text-4xl font-raleway leading-tight font-medium text-primary relative"
                   variants={smMenuVariants}
                   initial="hidden"
                   animate="visible"

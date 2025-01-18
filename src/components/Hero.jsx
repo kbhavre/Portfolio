@@ -7,16 +7,16 @@ const Hero = () => {
   return (
     <div className="h-screen relative  lg:pb-32  flex flex-col lg:flex-row justify-evenly ">
       {/* Left part (Content) */}
-      <div className="lg:w-[60%] flex flex-col gap-20 sm:gap-32 lg:justify-between  relative z-10 px-4 md:px-0">
+      <div className="lg:w-[60%] flex flex-col gap-16 lg:justify-between  relative z-10 px-4 md:px-0">
         {/* Main Heading */}
-        <h1 className="font-kyiv font-normal text-6xl lg:text-8xl tracking-tight text-secondary ml-3 md:ml-0">
+        <h1 className="font-kyiv font-normal text-5xl lg:text-8xl tracking-tight text-secondary ml-3 md:ml-0">
           <span className="text-myBlack tracking-tighter ml-[-11px]">B.</span>
           Kunal
         </h1>
 
         {/* Paragraph */}
         <div className="flex justify-center -mt-10 lg:mt-0">
-          <p className="inline-block text-justify text-lg md:text-2xl font-raleway font-medium w-[80%] lg:w-[50%] leading-tight tracking-tight">
+          <p className="inline-block text-justify text-[16px] md:text-2xl font-raleway font-medium w-[80%] lg:w-[50%] leading-tight tracking-tight">
             I’m a creative designer and <DrawCircle text="Frontend Developer" />
             , specializing in intuitive interfaces, seamless experiences, and
             visually engaging web solutions.
@@ -24,9 +24,9 @@ const Hero = () => {
         </div>
 
         {/* Featured Works */}
-        <div className="flex justify-start gap-24 ">
-          <div className="flex flex-col  md:items-center gap-4">
-            <h6 className="formText leading-none text-myGrey">
+        <div className="flex justify-between ">
+          <div className="flex flex-col md:items-center gap-4">
+            <h6 className="text-[12px] md:text-sm formText leading-none text-myGrey">
               Featured Works
             </h6>
             <Link to="/work">
@@ -34,11 +34,11 @@ const Hero = () => {
             </Link>
           </div>
 
-          <h6 className="formText text-myGrey font-sans font-normal tracking-tight hidden lg:block">
+          <h6 className="formText text-myGrey font-sans font-normal tracking-tight hidden md:block">
             © 2025
           </h6>
 
-          <div className="flex flex-col gap-5 formText underline text-myBlack font-semibold">
+          <div className="flex flex-col gap-2 md:gap-5 text-[12px] md:text-sm formText underline text-myBlack font-semibold pr-0 md:pr-8">
             <a href="mailto:kbhavare78@gmail.com" target="_blank">kbhavare78@gmail.com</a>
 
             <div className="flex flex-col ">

@@ -1,7 +1,6 @@
 import { motion } from 'framer-motion'
 import { pageVariants } from '../motion'
 import TextMask from '../components/TextMask';
-import { Link } from 'react-router-dom';
 import MenuForm from '../components/MenuForm';
 
 const Contact = () => {
@@ -12,7 +11,7 @@ const Contact = () => {
     initial="hidden"
     animate="visible"
     variants={pageVariants}
-     className='min-h-screen w-full flex flex-col justify-center items-center pb-24'>
+     className='min-h-screen w-full flex flex-col justify-center items-center pb-40'>
     
 
     <div className="flex items-center justify-center flex-col gap-y-1 w-full h-auto ">
@@ -35,13 +34,13 @@ const Contact = () => {
 						transition={{ ease: "easeInOut", duration: 0.5, delay: 1 }}>
 						<a
 							href="mailto:kbhavre78@gmail.com?subject=Portfolio-Inquiry"
-							className="uppercase font-raleway text-xl md:text-2xl text-myBlack tracking-wider font-semibold">
+							className="uppercase font-raleway text-lg md:text-2xl text-myBlack tracking-wider font-semibold">
 							Kbhavare78@gmail.com
 						</a>
 					</motion.div>
 				</div>
 
-        <div className='bg-secondary rounded-lg w-[70%] p-2 mt-6'>
+        <div className='bg-secondary rounded-lg  w-[90%] md:w-[80%] p-2 mt-6'>
         <MenuForm/>
         </div>
         

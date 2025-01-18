@@ -63,7 +63,7 @@ export const projects = [
         title: "Nexcent",
         img: "/Nexcent.png",
         tech: ["React", "Tailwind", "Stripe.js", "Node.js", "MongoDB"],
-        para: "DiaAlert is a web application developed during my machine learning internship. It predicts whether a user is diabetic based on inputs like BMI, age, and glucose level, providing accurate results. This project demonstrates practical application of ML in healthcare.",
+        para: "Nexcent is a project I created to test my React skills by transforming a random Figma design into a fully functional website. I completed the project in just a few days, focusing on responsive design, reusable components, and interactive UI elements to enhance my front-end development expertise.",
         linkref: "https://nexcent-sigma-eight.vercel.app/",
     },
     {

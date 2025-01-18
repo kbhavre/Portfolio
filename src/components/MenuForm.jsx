@@ -65,7 +65,7 @@ const MenuForm = () => {
   };
 
   return (
-    <div className="flex flex-col gap-1 w-full">
+    <div className="flex flex-col gap-1">
       <h6 className="formText block lg:hidden">Have an Idea?</h6>
 
       <form onSubmit={handleSubmit} className="flex flex-col gap-2">
@@ -91,7 +91,7 @@ const MenuForm = () => {
           type="submit"
           className="bg-primary px-2 py-4 flex items-center gap-4"
         >
-          <h6 className="formText text-lg text-myBlack font-semibold">
+          <h6 className="formText text-sm md:text-lg text-myBlack font-semibold">
             Hey there
           </h6>
           <motion.div
@@ -100,7 +100,7 @@ const MenuForm = () => {
             animate="visible"
             exit="hidden"
           >
-            <FaArrowRight className="h-6 w-6 mb-[2px]" />
+            <FaArrowRight className=" h-4 w-4 md:h-6 md:w-6 mb-[2px]" />
           </motion.div>
         </button>
       </form>
