@@ -12,7 +12,7 @@ const Contact = () => {
     initial="hidden"
     animate="visible"
     variants={pageVariants}
-     className='h-screen w-full flex flex-col justify-center items-center pb-24'>
+     className='min-h-screen w-full flex flex-col justify-center items-center pb-24'>
     
 
     <div className="flex items-center justify-center flex-col gap-y-1 w-full h-auto ">

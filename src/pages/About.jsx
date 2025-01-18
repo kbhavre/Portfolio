@@ -8,7 +8,7 @@ const About = () => {
     initial="hidden"
     animate="visible"
     variants={pageVariants}
-     className='h-screen w-full flex flex-col items-center overflow-y-auto scrollbar-hide pt-4 pb-24 md:pb-36'>
+     className='min-h-screen w-full flex flex-col items-center overflow-y-scroll scrollbar-hide pt-4 pb-24 md:pb-36'>
       <p className="paraText">
       I am <DrawCircle text='Kunal Bhavare'/> a designer and Developer passionate about merging creativity with technolgy. Frustrated by seeing my designs lose their essence during development,  I masterd both the skills to ensure projects maintain visual integrity and functional excellence.
       <br />
