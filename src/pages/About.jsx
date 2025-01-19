@@ -15,7 +15,7 @@ const About = () => {
       I am <DrawCircle text='Kunal Bhavare'/> a designer and Developer passionate about merging creativity with technolgy. Frustrated by seeing my designs lose their essence during development,  I masterd both the skills to ensure projects maintain visual integrity and functional excellence.
       <br />
       Beyond design and development, I am a dedicated problem solver, having tackled over 
-      <span className='font-sans text-secondary'> 400 </span>
+      <span className='text-secondary'> 400 </span>
       problems on platforms like LeetCode, GeeksforGeeks, and Codestudio.
       </p>
 

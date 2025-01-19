@@ -15,7 +15,7 @@ const Skills = () => {
       <p className="w-full md:w-4/5 text-center mx-auto paraText mb-6">
         I am someone who tries many things out, gets in trouble, and eventually
         solves it. Being a self-taught guy (with GPT, docs and random youtube
-        videos), I haven not followed any specific path. I have tried out
+        videos), I have not followed any specific path. I have tried out
         Machine Learning, a bit of Designing, but then shifted to development.
       </p>
 
